@@ -83,12 +83,17 @@ class Hospital:
         userHrNo = input('enter the Hr. no.\n: - ')
         for dic3 in self.patient_list:
             for d3 in dic3:
-                if dic3[d3] == userHrNo:
+                if dic3[d3] == userHrNo:  
                     print(dic3)
                     print('\n Update the data \n')
                     ysn = input('Enter yes or no: - ')
                     if ysn == 'yes':
                         keyip = input('Enter the update key: - ')
+                        if keyip in dic3:
+                            pass
+                        else :
+                            print('Please Enter Proper Update Key')
+                            return self.update_data()
                         valueip = input('Enter the update value: - ')
                         for dic4 in self.patient_list:
                             for d4 in dic4:
@@ -97,10 +102,19 @@ class Hospital:
                                     print(dic4)
                                     print('\n Update save successfuly')
                                     break
-                                else:
-                                    if keyip not in dic4:
-                                        print('Please Enter Proper Update Key')
-                                        break
+                    elif ysn!='yes':
+                        print('\n')
+                        return self.usless()
+                        
+                # elif dic3[d3]!=userHrNo:
+                #     print('hello')
+                               # else:
+                                #    if keyip not in dic4:
+                                 #       print('Please Enter Proper Update Key')
+                                  #      break
+
+    def usless(self):
+        pass
                                         
                                       #---
 
