@@ -133,12 +133,12 @@ class Hospital:
 # classCalling≈===========
 hptl = Hospital()
 # Initial data
-hptl.add_patient("hr.001", "A", 20, "AB+", 'male', 'astama', 'Dr.joshi')
-hptl.add_patient("hr.002", "B", 22, "O-", 'male', 'corona', 'Dr.vedant')
-hptl.add_patient("hr.003", "C", 21, "A+", 'female', 'eye opration', 'Dr.j')
-hptl.add_patient("hr.004", 'A', 23, 'A+', 'femle', 'skin transtplant', 'Dr.joshi')
-hptl.add_patient("hr.005", "z", 22, "O", 'male', 'eye opration', 'Dr.j')
-hptl.add_patient("hr.006", "C", 11, "A+", 'female', 'fever', 'Dr.vedant')
-hptl.add_patient("hr.007", 'A', 22, 'A+', 'male', 'fever', 'Dr.joshi')
+hptl.add_patient("hr.001", "monty", 20, "AB+", 'male', 'astama', 'Dr.jonh')
+hptl.add_patient("hr.002", "joy", 22, "O-", 'male', 'corona', 'Dr.jonh')
+hptl.add_patient("hr.003", "devid", 21, "A+", 'female', 'eye opration', 'Dr.jonh')
+hptl.add_patient("hr.004", 'jonh', 23, 'A+', 'femle', 'skin transtplant', 'Dr.jonh')
+hptl.add_patient("hr.005", "joy", 22, "O", 'male', 'eye opration', 'Dr.jonny')
+hptl.add_patient("hr.006", "helina", 11, "A+", 'female', 'fever', 'Dr.jonny')
+hptl.add_patient("hr.007", 'devid', 22, 'A+', 'male', 'fever', 'Dr.jonny')
 
 hptl.run()
