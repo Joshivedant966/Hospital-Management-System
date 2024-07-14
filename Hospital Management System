@@ -73,9 +73,14 @@ class Hospital:
                     ysn = input('Enter yes or no: - ')
                     if ysn == 'yes':
                         del self.patient_list[index]
-                        print('record deleted')
-                        break
+                        print('record deleted\n')
+                        return self.usless()
+                    elif ysn!='yes':
+                        print('\n')
+                        return self.usless()
             index += 1
+
+        print('Please Enter Proper Hr number\n')
             
 # update data
 
@@ -100,19 +105,17 @@ class Hospital:
                                 if dic4[d4] == userHrNo:
                                     dic4[keyip] = valueip
                                     print(dic4)
-                                    print('\n Update save successfuly')
-                                    break
+                                    print('\n Update save successfuly\n')
+                                    
+                                    return self.usless()
                     elif ysn!='yes':
                         print('\n')
                         return self.usless()
+        print('Please Enter Proper Hr number\n')
                         
                 # elif dic3[d3]!=userHrNo:
-                #     print('hello')
-                               # else:
-                                #    if keyip not in dic4:
-                                 #       print('Please Enter Proper Update Key')
-                                  #      break
-
+                #     return self.usless()
+                              
     def usless(self):
         pass
                                         
